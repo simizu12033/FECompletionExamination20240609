@@ -1,0 +1,854 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>出典候補調査表｜FE 科目A 特例修了認定試験（2024年6月9日実施分）</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{background:#f8fafb;color:#17212b}
+    .source-wrap{max-width:1220px;margin:0 auto;padding:38px 24px 72px}
+    .source-hero{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;box-shadow:0 18px 50px #20304012}
+    .source-hero h1{margin:.25rem 0 1rem;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:0}
+    .source-hero p{line-height:1.9;color:var(--muted);max-width:980px}
+    .source-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .source-actions a{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:10px 16px;background:var(--navy);color:#fff;text-decoration:none;font-weight:800}
+    .source-actions a.secondary{background:#fff;color:var(--blue);border:1px solid var(--line)}
+    .source-note{margin:22px 0;padding:16px 18px;background:#fff8e1;border-left:6px solid var(--yellow);border-radius:8px;line-height:1.8}
+    .source-legend{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+    .source-legend .source-badge{font-size:.76rem}
+    .source-table-wrap{overflow:auto;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:0 16px 44px #2030400f}
+    .source-table{width:100%;border-collapse:collapse;min-width:1180px;font-size:.88rem}
+    .source-table th,.source-table td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.7}
+    .source-table th{position:sticky;top:0;background:#153243;color:#fff;text-align:left;white-space:nowrap}
+    .source-table tr:nth-child(even) td{background:#f7fbfc}
+    .qcell{font-weight:800;color:var(--blue);white-space:nowrap}
+    .qcell small{display:block;color:var(--muted);font-weight:700}
+    .source-link{font-weight:800;color:var(--blue)}
+    .candidate-title{margin:.35rem 0;color:#334}
+    .source-badges{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:.3rem 0}
+    .source-badge{display:inline-grid;place-items:center;border-radius:999px;padding:3px 10px;margin:0 6px 3px 0;font-weight:900;font-size:.72rem;line-height:1.5;border:1px solid transparent;white-space:nowrap;box-shadow:inset 0 -1px 0 #00000018}
+    .source-badge.fe{background:#dbeafe;color:#1d4ed8;border-color:#93c5fd}
+    .source-badge.public{background:#bae6fd;color:#075985;border-color:#38bdf8}
+    .source-badge.sample{background:#e0e7ff;color:#4338ca;border-color:#818cf8}
+    .source-badge.ap{background:#ffedd5;color:#c2410c;border-color:#fb923c}
+    .source-badge.sg{background:#dcfce7;color:#15803d;border-color:#4ade80}
+    .source-badge.menjo{background:#ffe4e6;color:#be123c;border-color:#fb7185}
+    .confidence{display:inline-grid;place-items:center;min-width:64px;border-radius:999px;padding:5px 10px;font-weight:800;font-size:.78rem}
+    .confidence.high{background:#dff4ed;color:#173f35}
+    .confidence.mid{background:#fff0c9;color:#604400}
+    .confidence.low{background:#ffe1db;color:#79291e}
+    .alt-list{margin:0;padding-left:1.2rem}
+    .alt-list li{margin:0 0 .55rem}
+    .alt-list .source-badge{margin-left:-1.2rem}
+    .alt-list span{display:block;color:var(--muted);font-size:.8rem}
+    @media(max-width:680px){.source-wrap{padding:24px 14px 56px}.source-hero{padding:20px}}
+  </style>
+</head>
+<body>
+  <main class="source-wrap">
+    <section class="source-hero">
+      <p class="section-kicker">SOURCE MAP</p>
+      <h1>出典候補調査表</h1>
+      <p>2024年6月9日実施分の60問について、FE/AP/SG公開問題サイト、FE科目Aサンプル問題、IPA修了試験問題情報を参照先として整理しました。出典の種別がすぐ分かるよう、参照ファイルと同じ色付きバッジで分類しています。</p>
+      <div class="source-actions">
+        <a href="index.html">試験ページへ戻る</a>
+        <a class="secondary" href="source-map.csv">CSVを開く</a>
+        <a class="secondary" href="reference-map.html">参考問題対応表</a>
+      </div>
+    </section>
+    <p class="source-note">「確定」はIPA修了試験情報を直接の確認先にしたもの、「高」は同分野の公開問題・サンプル問題サイトを優先参照先にしたもの、「候補」は基本情報の公開問題群を横断確認する前提のものです。学習用の出典候補表なので、最終確認ではリンク先の出題履歴・掲載内容も合わせて確認してください。</p>
+    <div class="source-legend" aria-label="出典種別の凡例">
+      <span class="source-badge ap">応用情報</span><span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge menjo">修了試験</span><span class="source-badge public">公開問題</span><span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span>
+    </div>
+    <div class="source-table-wrap">
+      <table class="source-table">
+        <thead><tr><th>今回</th><th>分野</th><th>テーマ</th><th>確度</th><th>最有力候補</th><th>関連確認先</th></tr></thead>
+        <tbody>
+          <tr>
+      <td class="qcell">問1<small>P.2</small></td>
+      <td>基礎理論</td>
+      <td>2進数シフト演算</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">2進数シフト演算</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問2<small>P.2</small></td>
+      <td>基礎理論</td>
+      <td>標準偏差</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">標準偏差</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問3<small>P.2</small></td>
+      <td>基礎理論</td>
+      <td>正規表現</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">正規表現</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問4<small>P.3</small></td>
+      <td>システム性能</td>
+      <td>M/M/1待ち行列</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">M/M/1待ち行列</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問5<small>P.3</small></td>
+      <td>アルゴリズム</td>
+      <td>完全二分木</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">完全二分木</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問6<small>P.3</small></td>
+      <td>データ構造</td>
+      <td>スタック</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">スタック</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問7<small>P.4</small></td>
+      <td>ソフトウェア</td>
+      <td>API</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">API</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問8<small>P.4</small></td>
+      <td>ハードウェア</td>
+      <td>平均CPIとMIPS</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">平均CPIとMIPS</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問9<small>P.4</small></td>
+      <td>ハードウェア</td>
+      <td>キャッシュメモリ</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">キャッシュメモリ</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問10<small>P.5</small></td>
+      <td>ハードウェア</td>
+      <td>画面メモリ量</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">画面メモリ量</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問11<small>P.5</small></td>
+      <td>システム構成</td>
+      <td>フォールトトレラント</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">フォールトトレラント</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問12<small>P.5</small></td>
+      <td>システム構成</td>
+      <td>稼働率</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">稼働率</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問13<small>P.6</small></td>
+      <td>システム構成</td>
+      <td>ページング</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">ページング</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問14<small>P.6</small></td>
+      <td>プログラム言語</td>
+      <td>インタプリタとコンパイラ</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">インタプリタとコンパイラ</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問15<small>P.6</small></td>
+      <td>ソフトウェア</td>
+      <td>OSS</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sample">サンプル問題</span><a class="source-link" href="https://www.fe-siken.com/">基本情報技術者試験 科目A サンプル問題</a>
+        <p class="candidate-title">OSS</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sample">サンプル問題</span><span class="source-badge fe">基本情報</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sample">サンプル問題</span><a href="https://www.fe-siken.com/">サンプル問題 参照サイト</a><span>FE科目Aサンプル問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問16<small>P.7</small></td>
+      <td>基礎理論</td>
+      <td>偶数パリティ</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">偶数パリティ</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問17<small>P.7</small></td>
+      <td>マルチメディア</td>
+      <td>テクスチャマッピング</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">テクスチャマッピング</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問18<small>P.7</small></td>
+      <td>データベース</td>
+      <td>データウェアハウス</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">データウェアハウス</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問19<small>P.8</small></td>
+      <td>データベース</td>
+      <td>第3正規形</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">第3正規形</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問20<small>P.8</small></td>
+      <td>データベース</td>
+      <td>NOT EXISTS</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">NOT EXISTS</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問21<small>P.8</small></td>
+      <td>データベース</td>
+      <td>JDBC</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">JDBC</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問22<small>P.9</small></td>
+      <td>データベース</td>
+      <td>共有ロックと排他ロック</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">共有ロックと排他ロック</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問23<small>P.9</small></td>
+      <td>ネットワーク</td>
+      <td>実効伝送速度</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">実効伝送速度</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問24<small>P.9</small></td>
+      <td>ネットワーク</td>
+      <td>TCP/IP階層</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">TCP/IP階層</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問25<small>P.10</small></td>
+      <td>ネットワーク</td>
+      <td>サブネットマスク</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">サブネットマスク</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問26<small>P.10</small></td>
+      <td>ネットワーク</td>
+      <td>CGI</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">CGI</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問27<small>P.10</small></td>
+      <td>情報セキュリティ</td>
+      <td>サイバーキルチェーン</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">サイバーキルチェーン</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問28<small>P.11</small></td>
+      <td>情報セキュリティ</td>
+      <td>エンベロープ暗号化</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">エンベロープ暗号化</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問29<small>P.11</small></td>
+      <td>情報セキュリティ</td>
+      <td>リスクベース認証</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">リスクベース認証</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問30<small>P.11</small></td>
+      <td>情報セキュリティ</td>
+      <td>セキュリティガバナンス</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">セキュリティガバナンス</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問31<small>P.12</small></td>
+      <td>情報セキュリティ</td>
+      <td>NTP</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">NTP</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問32<small>P.12</small></td>
+      <td>情報セキュリティ</td>
+      <td>ステガノグラフィ</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">ステガノグラフィ</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問33<small>P.12</small></td>
+      <td>情報セキュリティ</td>
+      <td>WPA2-PSK</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">WPA2-PSK</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問34<small>P.13</small></td>
+      <td>開発技術</td>
+      <td>アクティビティ図</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">アクティビティ図</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問35<small>P.13</small></td>
+      <td>開発技術</td>
+      <td>インスタンス</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">インスタンス</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問36<small>P.13</small></td>
+      <td>開発技術</td>
+      <td>デザインレビュー</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">デザインレビュー</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問37<small>P.14</small></td>
+      <td>開発技術</td>
+      <td>静的解析ツール</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">静的解析ツール</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問38<small>P.14</small></td>
+      <td>マネジメント</td>
+      <td>期待値</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">期待値</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問39<small>P.14</small></td>
+      <td>マネジメント</td>
+      <td>スクラムマスタ</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">スクラムマスタ</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問40<small>P.15</small></td>
+      <td>開発技術</td>
+      <td>リファクタリング</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">リファクタリング</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問41<small>P.15</small></td>
+      <td>マネジメント</td>
+      <td>品質評価グラフ</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">品質評価グラフ</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問42<small>P.15</small></td>
+      <td>マネジメント</td>
+      <td>EVM</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">EVM</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問43<small>P.16</small></td>
+      <td>システム運用</td>
+      <td>コールドスタート</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">コールドスタート</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問44<small>P.16</small></td>
+      <td>システム運用</td>
+      <td>SPD</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">SPD</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問45<small>P.16</small></td>
+      <td>情報セキュリティ</td>
+      <td>情報セキュリティ監査</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge sg">セキュリティマネジメント</span><a class="source-link" href="https://www.sg-siken.com/">情報セキュリティマネジメント試験 公開問題</a>
+        <p class="candidate-title">情報セキュリティ監査</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge sg">セキュリティマネジメント</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge sg">セキュリティマネジメント</span><a href="https://www.sg-siken.com/">セキュリティマネジメント 参照サイト</a><span>SG公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問46<small>P.17</small></td>
+      <td>ストラテジ</td>
+      <td>To-Beモデル</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">To-Beモデル</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問47<small>P.17</small></td>
+      <td>ストラテジ</td>
+      <td>スマートグリッド</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">スマートグリッド</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問48<small>P.17</small></td>
+      <td>システム企画</td>
+      <td>要件定義</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">要件定義</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問49<small>P.18</small></td>
+      <td>ストラテジ</td>
+      <td>M&amp;A</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">M&amp;A</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問50<small>P.18</small></td>
+      <td>ストラテジ</td>
+      <td>プロダクトライフサイクル</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">プロダクトライフサイクル</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問51<small>P.18</small></td>
+      <td>ストラテジ</td>
+      <td>BSC</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">BSC</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問52<small>P.19</small></td>
+      <td>ストラテジ</td>
+      <td>技術のSカーブ</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">技術のSカーブ</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問53<small>P.19</small></td>
+      <td>ストラテジ</td>
+      <td>HEMS</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">HEMS</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問54<small>P.19</small></td>
+      <td>開発技術</td>
+      <td>コンカレントエンジニアリング</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">コンカレントエンジニアリング</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問55<small>P.20</small></td>
+      <td>ストラテジ</td>
+      <td>クラウドソーシング</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">クラウドソーシング</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> エ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問56<small>P.20</small></td>
+      <td>ストラテジ</td>
+      <td>マトリックス組織</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">マトリックス組織</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問57<small>P.20</small></td>
+      <td>ストラテジ</td>
+      <td>定量発注方式</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">定量発注方式</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問58<small>P.21</small></td>
+      <td>品質管理</td>
+      <td>パレート図</td>
+      <td><span class="confidence high">確定</span></td>
+      <td>
+        <span class="source-badge menjo">修了試験</span><a class="source-link" href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験問題情報</a>
+        <p class="candidate-title">パレート図</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge menjo">修了試験</span></p>
+        <p><strong>正答:</strong> ウ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問59<small>P.21</small></td>
+      <td>会計</td>
+      <td>期待利益</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">期待利益</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> イ</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr><tr>
+      <td class="qcell">問60<small>P.21</small></td>
+      <td>法務</td>
+      <td>労働者派遣契約</td>
+      <td><span class="confidence high">高</span></td>
+      <td>
+        <span class="source-badge ap">応用情報</span><a class="source-link" href="https://www.ap-siken.com/">応用情報技術者試験 科目A 公開問題</a>
+        <p class="candidate-title">労働者派遣契約</p>
+        <p class="source-badges"><strong>種別:</strong> <span class="source-badge ap">応用情報</span><span class="source-badge public">公開問題</span></p>
+        <p><strong>正答:</strong> ア</p>
+        <p><strong>確認観点:</strong> 問題テーマと頻出範囲に基づく学習用の出典分類です。実際の問題画像はIPA提供の2024年6月実施分修了試験問題を使用しています。</p>
+      </td>
+      <td><ol class="alt-list"><li><span class="source-badge ap">応用情報</span><a href="https://www.ap-siken.com/">応用情報 参照サイト</a><span>AP公開問題の確認先</span></li><li><span class="source-badge fe">基本情報</span><a href="https://www.fe-siken.com/">基本情報 参照サイト</a><span>FE公開問題・サンプル問題の確認先</span></li><li><span class="source-badge menjo">修了試験</span><a href="https://www.ipa.go.jp/shiken/about/menjo-fe.html#kakomondai">修了試験 参照サイト</a><span>IPA 修了試験問題情報</span></li></ol></td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
