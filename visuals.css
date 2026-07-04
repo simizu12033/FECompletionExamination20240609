@@ -24,3 +24,29 @@
 .sql-visual{height:100%;min-height:260px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;text-align:center;padding:16px}.sql-visual div{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px}.sql-visual .empty{background:#fff0ed;border-color:#f6b0a8}.sql-visual span{display:block;margin-top:6px;color:var(--muted);font-size:.72rem}.sql-visual i{font-style:normal;color:var(--blue);font-weight:900}.sql-visual strong{grid-column:1/-1;background:var(--yellow);border-radius:999px;padding:9px;color:var(--navy)}
 .lifecycle-visual{width:100%;height:100%;min-height:260px;display:grid;align-content:center;text-align:center;padding:12px}.lifecycle-visual svg{width:100%;height:165px}.lifecycle-visual path{fill:none;stroke:var(--blue);stroke-width:7;stroke-linecap:round}.lifecycle-visual line{stroke:var(--coral);stroke-width:2;stroke-dasharray:5 5}.lifecycle-visual div{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.lifecycle-visual span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px;font-size:.67rem;font-weight:900}
 @media(max-width:560px){.tree-row{gap:24px}.tree-row span,.tree-row b{width:34px;height:34px}.stack-visual{flex-direction:column}.sql-visual{grid-template-columns:1fr}.sql-visual i{transform:rotate(90deg)}}
+
+/* Keep explanation diagrams from being squeezed behind their notes. */
+.card-grid{grid-template-columns:1fr!important;gap:22px!important}
+.visual{display:block!important;min-height:0!important;overflow:visible!important}
+.diagram{min-height:0!important;overflow:visible!important}
+.diagram>.v-detail{width:100%;min-height:0;align-items:start}
+.v-detail-main{min-height:280px}
+.v-detail-side{min-width:0}
+.v-detail-main>.v-flow,
+.v-detail-main>.v-compare,
+.v-detail-main>.v-formula,
+.v-detail-main>.v-stack,
+.v-detail-main>.v-cycle,
+.v-detail-main>.mini-table,
+.v-detail-main>.v-cardset,
+.v-detail-main>.v-layers,
+.v-detail-main>.v-grid,
+.v-detail-main>.bell-curve,
+.v-detail-main>.s-curve,
+.v-detail-main>.tree-diagram,
+.v-detail-main>.stack-visual,
+.v-detail-main>.regex-visual,
+.v-detail-main>.sql-visual,
+.v-detail-main>.lifecycle-visual,
+.v-detail-main>.pareto{width:100%;min-height:280px}
+@media(max-width:680px){.v-detail{grid-template-columns:1fr!important}.v-detail-main{min-height:240px}.v-detail-main>*{min-height:240px!important}}
